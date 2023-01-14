@@ -1,0 +1,16 @@
+<div class="card-deck">
+    <div class="card" *ngFor="let panier of paniers">
+      <div class="card-body">
+        <h5 class="card-title">Panier {{ panier.id }}</h5>
+        <p class="card-text">Quantité : {{ panier.quantite }}</p>
+        <p class="card-text">Prix total : {{ panier.prixTotal }}</p>
+        <p class="card-text">Date : {{ panier.date }}</p>
+        <h6>Produits</h6>
+        <ul>
+          <li *ngFor="let produit of panier.produits">{{ produit.nom }} - {{ produit.prixUnitaire }}</li>
+        </ul>
+        <p class="card-text">Utilisateur : {{ panier.utilisateur.nom }}</p>
+
+      </div>
+    </div>
+  </div>

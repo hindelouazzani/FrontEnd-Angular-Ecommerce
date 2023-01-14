@@ -1,0 +1,48 @@
+<div class="card">
+    <div class="card-body">
+        <table class="table">
+            <tbody>
+                <tr>
+                    <th>Id</th>
+                    <td>{{panier.id}}</td>
+                </tr>
+                <tr>
+                    <th>Utilisateur</th>
+                    <td>{{panier.utilisateur.nom}}</td>
+                </tr>
+                <tr>
+                    <th>Produits</th>
+                    <td>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Nom</th>
+                                    <th>Prix</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let produit of panier.produits">
+                                    <td>{{ produit.nom }}</td>
+                                    <td>{{ produit.prixUnitaire }}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Prix total</th>
+                    <td>{{panier.prixTotal}}</td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button class="btn btn-secondary" (click)="cleanPanier()">Clean Panier</button>
+                    </td>
+                    <td>
+                        <button class="btn btn-secondary" (click)="validateCart(panier)">Valider Panier</button>
+                      </td>
+                    
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
