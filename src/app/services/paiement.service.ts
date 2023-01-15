@@ -2,7 +2,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 
-const API_GET_PAIEMENT = 'http://localhost:8080/paiement';
+const API_GET_PAIEMENT = 'http://localhost:4200/paiement';
 
 
 @Injectable({

@@ -2,7 +2,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 
-const API_GET_FACTURE = 'http://localhost:8080/facture';
+const API_GET_FACTURE = 'http://localhost:4200/facture';
 
 @Injectable({
   providedIn: 'root'

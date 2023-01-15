@@ -1,7 +1,7 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-const API_GET_COMMANDES = 'http//localhost:8080/commande'
+const API_GET_COMMANDES = 'http//localhost:4200/commande'
 const httpOptions = {
   headers: new HttpHeaders({ 'Content-Type': 'application/json' })
   };

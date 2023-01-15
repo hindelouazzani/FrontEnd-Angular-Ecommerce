@@ -1,7 +1,7 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-const API_GET_CATEGORIES = 'http://localhost:8080/categorie';
+const API_GET_CATEGORIES = 'http://localhost:4200/categorie';
 const httpOptions = {
   headers: new HttpHeaders({ 'Content-Type': 'application/json' })
   };
